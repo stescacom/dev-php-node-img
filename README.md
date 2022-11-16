@@ -31,7 +31,7 @@ In order to build the image follow the steps below
 To create a container from the built image run 
 ```docker run -v <<php project folder>>:/var/www << image tag >> --name << container name >>```
 
-### Use with ==docker-compose.yml==
+### Use with docker-compose.yml
 
 In order to use the recently built image with `docker-compose.yml`, consider the following example.
 
