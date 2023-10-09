@@ -1,9 +1,9 @@
-# Docker Development Image For PHP8 and Node 16
+# Docker Development Image For PHP and NodeJS
 
 This Dockerfile allows you to build an image for PHP8 and Node 16. This image can support development with databases such as MongoDB and MySQL, the php extensions for these DBs have been integrated. The image created will have the following packages for development
 
 1. PHP 8.x
-2. Node 16.x
+2. Node 18.x
 3. Composer
 4. PHP extensions for Mongo
 5. PHP extensions for MySQL
@@ -21,7 +21,7 @@ In order to build the image follow the steps below
 
 1. Clone the repo
 
-```git clone https://github.com/stescacom/dev-php8-node16-img.git```
+```git clone https://github.com/stescacom/dev-php-node-img.git```
 
 2. cd into the cloned repo
 3. Run `docker build . -t <<your image tag>>`
