@@ -28,7 +28,7 @@ RUN apt-get update && apt-get install -y \
     ca-certificates \
     gnupg
 
-RUN apt-get install -y supervisor
+#RUN apt-get install -y supervisor
 
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
@@ -64,7 +64,7 @@ COPY --chown=www:www . /var/www
 # Change current user to www
 USER www
 
-# Expose port 9000 and start php-fpm server
+# Expose port 9000 and start php-fpm server & supervisor d
 EXPOSE 9000 
 EXPOSE 5000-6000
 CMD ["php-fpm"]
